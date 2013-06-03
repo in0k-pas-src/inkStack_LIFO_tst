@@ -22,9 +22,9 @@ implementation
 
 procedure tTests_inkLIFO_FFx0_Clean.Clear_NIL;
 begin
-    STACK:=TST_stack_Create(0);
+    STACK:=TST_node_Create(nil,nil);
     //---
-    inkLIFO_ClearOBJ(STACK);
+    inkLIFO_Clean(STACK);
     //---
     AssertNull(STACK);
 end;
@@ -33,7 +33,7 @@ procedure tTests_inkLIFO_FFx0_Clean.Clear_One;
 begin
     STACK:=TST_node_Create(nil,nil);
     //---
-    inkLIFO_nodesCLR(STACK,@TST_node_DESTROY);
+    inkLIFO_Clean(STACK);
     //---
     AssertNull(STACK);
 end;
@@ -43,7 +43,7 @@ begin
     STACK:=TST_node_Create(nil,nil);
     STACK:=TST_node_Create(nil,STACK);
     //---
-    inkLIFO_nodesCLR(STACK,@TST_node_DESTROY);
+    inkLIFO_Clean(STACK);
     //---
     AssertNull(STACK);
 end;
@@ -57,7 +57,7 @@ begin
     STACK:=TST_node_Create(nil,STACK);
     STACK:=TST_node_Create(nil,STACK);
     //---
-    inkLIFO_nodesCLR(STACK,@TST_node_DESTROY);
+    inkLIFO_Clean(STACK);
     //---
     AssertNull(STACK);
 end;

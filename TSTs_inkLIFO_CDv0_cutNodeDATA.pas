@@ -11,6 +11,7 @@ uses testregistry,
 
 type
 
+  {[Type TeST Core Test Case] САМ РОДОначальник тестов}
  tTSTCTC_inkLIFO_CDv0_cutNodeDATA= class(tTSTCTC_CORE_inkLIFO)
   protected
     procedure _TEST_(index:integer);
@@ -18,14 +19,14 @@ type
     procedure cutNode_OVER;
   end;
 
- tTests_inkLLs_CDv0_cutNodeDATA_ListOne=class(tTSTCTC_inkLIFO_CDv0_cutNodeDATA)
+ tTests_inkLIFO_CDv0_cutNodeDATA_ListOne=class(tTSTCTC_inkLIFO_CDv0_cutNodeDATA)
   protected
     procedure SetUp; override;
   published
     procedure cutNodeIndex_0;
   end;
 
- tTests_inkLLs_CDv0_cutNodeDATA_ListTwo=class(tTSTCTC_inkLIFO_CDv0_cutNodeDATA)
+ tTests_inkLIFO_CDv0_cutNodeDATA_ListTwo=class(tTSTCTC_inkLIFO_CDv0_cutNodeDATA)
   protected
     procedure SetUp; override;
   published
@@ -33,7 +34,7 @@ type
     procedure cutNodeIndex_1;
   end;
 
- tTests_inkLLs_CDv0_cutNodeDATA_ListSiX=class(tTSTCTC_inkLIFO_CDv0_cutNodeDATA)
+ tTests_inkLIFO_CDv0_cutNodeDATA_ListSiX=class(tTSTCTC_inkLIFO_CDv0_cutNodeDATA)
   protected
     procedure SetUp; override;
   published
@@ -78,66 +79,66 @@ end;
 
 //------------------------------------------------------------------------------
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListOne.SetUp;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListOne.SetUp;
 begin
    inherited;
    STACK:=TST_stack_Create(1);
 end;
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListOne.cutNodeIndex_0;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListOne.cutNodeIndex_0;
 begin
    _TEST_(0);
 end;
 
 //------------------------------------------------------------------------------
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListTwo.SetUp;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListTwo.SetUp;
 begin
    inherited;
    STACK:=TST_stack_Create(2);
 end;
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListTwo.cutNodeIndex_0;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListTwo.cutNodeIndex_0;
 begin
    _TEST_(0);
 end;
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListTwo.cutNodeIndex_1;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListTwo.cutNodeIndex_1;
 begin
    _TEST_(1);
 end;
 
 //------------------------------------------------------------------------------
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListSiX.SetUp;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListSiX.SetUp;
 begin
    inherited;
    STACK:=TST_stack_Create(6);
 end;
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_0;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_0;
 begin
    _TEST_(0);
 end;
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_1;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_1;
 begin
    _TEST_(1);
 end;
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_4;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_4;
 begin
    _TEST_(4);
 end;
 
-procedure tTests_inkLLs_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_5;
+procedure tTests_inkLIFO_CDv0_cutNodeDATA_ListSiX.cutNodeIndex_5;
 begin
    _TEST_(5);
 end;
 
 initialization
-    RegisterTest(cTestSuitePath__inkLIFO,tTests_inkLLs_CDv0_cutNodeDATA_ListOne);
-    RegisterTest(cTestSuitePath__inkLIFO,tTests_inkLLs_CDv0_cutNodeDATA_ListTwo);
-    RegisterTest(cTestSuitePath__inkLIFO,tTests_inkLLs_CDv0_cutNodeDATA_ListSiX);
+    RegisterTest(cTestSuitePath__inkLIFO,tTests_inkLIFO_CDv0_cutNodeDATA_ListOne);
+    RegisterTest(cTestSuitePath__inkLIFO,tTests_inkLIFO_CDv0_cutNodeDATA_ListTwo);
+    RegisterTest(cTestSuitePath__inkLIFO,tTests_inkLIFO_CDv0_cutNodeDATA_ListSiX);
 end.
 

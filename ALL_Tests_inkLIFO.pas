@@ -10,7 +10,7 @@ uses
   TSTs_inkLIFO_BASE,
   TSTs_inkLIFO_FEx1_CLEAR,
   TSTs_inkLIFO_FEx2_CLEAR,
-  TSTs_inkLIFO_FD_CLEAR,
+  TSTs_inkLIFO_FD_ClearOBJ,
   TSTs_inkLIFO_FFx0_Clean,
   TSTs_inkLIFO_FFx1_CLEAR,
   TSTs_inkLIFO_FFx2_CLEAR,

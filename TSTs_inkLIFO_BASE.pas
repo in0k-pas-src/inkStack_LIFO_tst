@@ -10,7 +10,6 @@ uses testregistry, uTST_CORE_inkLIFO,
 
 type
 
-  {[Type TeST Core Test Case] САМ РОДОначальник тестов}
  tTests_inkLIFO_BASE=class(tTSTCTC_CORE_inkLIFO)
   published
     procedure Init_from_NIL;
